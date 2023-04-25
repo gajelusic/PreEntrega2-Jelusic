@@ -34,7 +34,6 @@
     justify-content: space-evenly;
 }
 
-
 /* MAIN */
 .gj-main-index{
     background-color: #f7f0f0;
@@ -65,7 +64,7 @@
 .gj-puntos-index{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    ;
     flex-direction: column;
     max-width: 350px;
     margin: 20px;
@@ -117,17 +116,26 @@ main a {
 /* FOOTER */
 footer {
     background-color: #8D818C;
-    padding: 25px;
+    padding: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #EEEEEE;
     text-align: left;
+}
+.nav-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 footer img {
     height: 30px;
 }
 .footer-ul {
     list-style-type: none;
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+footer nav p{
+    font-size: 70%;
+    text-align: center;
 }
