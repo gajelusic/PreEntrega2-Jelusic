@@ -153,6 +153,52 @@ footer nav p{
     text-align: center;
 }
 
+/* Grid */
+.gj-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 315px 315px 315px 150px;
+    gap: 10px 10px;
+    grid-template-areas:
+        "gj-grid-header gj-grid-header"
+        "gj-grid-txt1 gj-grid-video1"
+        "gj-grid-txt2 gj-grid-video2"
+        "gj-grid-txt3 gj-grid-video3"
+        "gj-grid-footer gj-grid-footer"
+}
+.gj-grid-header{
+    grid-area: gj-grid-header;
+}
+.gj-grid-txt1{
+    grid-area: gj-grid-txt1;
+    padding: 20px;
+}
+.gj-grid-video1{
+    grid-area: gj-grid-video1;
+}
+.gj-grid-txt2{
+    grid-area: gj-grid-txt2;
+    padding: 20px;
+}
+.gj-grid-video2{
+    grid-area: gj-grid-video2;
+}
+.gj-grid-txt3{
+    grid-area: gj-grid-txt3;
+    padding: 20px;
+}
+.gj-grid-video3{
+    grid-area: gj-grid-video3;
+}
+.gj-grid-footer{
+    grid-area: gj-grid-footer;
+    background-color: #8D818C;
+    padding: 20px;
+}
+.gj-grid-footer img{
+    height: 30px;
+}
+
 /* Medias queries */
 @media (max-width: 768px){
     .mejoras-item{
@@ -161,13 +207,16 @@ footer nav p{
         text-align: center;
         justify-content: center;
     }
+    .container-fluid{
+        justify-content: flex-start !important;
+    }
 }
 @media (max-width: 425px){
     *{
         padding: 0;
         margin: 0;
     }
-    .lista-indice{
+        .lista-indice{
         margin: 0;
         list-style-type: none;
         display: flex;
@@ -180,6 +229,9 @@ footer nav p{
     }
     .footer-ul{
         flex-direction: row;
+    }
+    .gj-header-img{
+        max-height: 45px;
     }
 }
 
